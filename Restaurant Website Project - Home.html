@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Header-Footer.css">
+	<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+	<title>Home</title>
+	<style>
+
+		#restimage {
+			width: 100%;
+		}
+
+
+		.images {
+			padding: 50px;
+			
+		}
+		#content img {
+			width: 100%;
+			height: 100%;
+			
+		}
+		#content a {
+			height: 100%;
+			box-shadow: 0 0 20px 1px black;
+			background-color: white;
+			font-size: 25px;
+			color: black;
+			text-align: center;
+			padding: 15px;
+			padding-bottom: 50px;
+			text-decoration: none;
+			display: block;
+			box-sizing: border-box;
+			transition: 0.5s;
+		}
+
+		#content a:hover {
+			transform: scale(1.1);
+		}
+
+
+
+/* -------- Responsive CSS ----------- */	
+		@media (min-width: 992px) {
+			.images {
+				width: 50%;
+				float: left;
+			}
+			#content {
+				display: flex;
+			}
+		}
+		@media (max-width: 991px) and (min-width: 768px) {
+			.images {
+				width: 50%;
+				float: left;
+			}
+			#content {
+				display: flex;
+			}
+			#content a {
+				font-size: 20px;
+				padding-bottom: 40px;
+			}
+		}
+		@media (max-width: 767px) {
+			.images {
+				width: 100%;
+				box-sizing: border-box;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="topbar">
+		<img src="Logo.png" id="headlogo" alt="Logo">
+		<header>
+			<a href="Restaurant Website Project - Home.html"><div id="name">Restaurant Name</div></a>
+			<br>
+			<div id="cert"><i>Certification / Tagline</i></div>
+		</header>
+		<nav id="topnav">
+			<a href="Restaurant Website Project - Home.html" class="nav">Home</a>
+			<a href="Restaurant Website Project - Menu.html" class="nav">Menu</a>
+			<a href="Restaurant Website Project - Awards.html" class="nav">Awards</a>
+		</nav>
+		</div>
+	</div>
+	<img id="restimage" src="Restaurant Picture.jpg" alt="Restaurant Image">
+	<section id="content">
+		<section class="images">
+			<a href="Restaurant Website Project - Menu.html">
+				<img src="Cuisines/6.png" alt="Menu Section">
+				Menu
+			</a>
+		</section>
+		<section class="images">
+			<a href="Restaurant Website Project - Specials.html">	
+				<img src="Cuisines/5.png" alt="Specials Section">
+				Specials
+			</a>
+		</section>
+	</section>	
+	</div>
+	<footer>
+		<div id="add">
+			Address :<br>
+			xxx - XXX, X Road<br>
+			XXX, X City<br>
+			xxxx Pincode
+		</div>
+		<div id="hrs">
+			Hours :<br>
+			day-day : hh:mm<br>
+			day Closed<br>
+			xxxxx
+		</div>
+		<div id="qt">
+			<i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit<br> Ut faucibus pulvinar elementum integer enim neque."</i>
+		</div>
+		<div id="cprt">
+			&copy; Copyright 20yy-20yy
+		</div>
+	</footer>
+</body>
+</html>

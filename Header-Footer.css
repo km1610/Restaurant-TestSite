@@ -1,0 +1,160 @@
+body {
+	margin: 0;
+	background-color: whitesmoke;
+	font-family: "Acme";
+}
+#topbar {
+	background-color: #b07b44;
+	padding: 30px;
+	height: 190px;
+	padding-top: 40px;
+	padding-bottom: 90px;
+	box-sizing: border-box;
+	width: 100%;
+}
+#headlogo {
+	width: 120px;
+	height: 120px;
+}
+
+#name {
+	font-size: 36px;
+	color: white;
+}
+header a {
+	text-decoration: none;
+}
+#cert {
+	color: darkred;
+}
+
+.nav {
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+	padding: 20px;
+	padding-bottom: 0;
+	transition: 0.5s;
+}
+.nav:hover {
+	color: darkred;
+}
+
+
+footer {
+	padding-top: 60px;
+	padding-left: 13%;
+	padding-right: 13%;
+	margin-top: 30px;
+	width: 100%;
+	height: 280px;
+	box-sizing: border-box;
+	background-color: #b07b44;
+}
+footer #add, footer #hrs, footer #qt{
+	font-size: 20px;
+}
+footer #cprt {
+	float: left;
+	text-align: center;
+	width: 100%;
+	padding: 40px;
+	box-sizing: border-box;
+}
+
+@media (min-width: 992px) {
+	#qt,#add,#hrs {
+		float: left;
+		width: 33.33%;
+	}
+	#headlogo {
+		float: left;
+		margin-right: 20px;
+	}
+	#topbar header {
+		float: left;
+	}
+	#topnav {
+		float: right;
+		vertical-align: middle;
+		margin-top: 30px;
+	}
+}
+@media (max-width: 991px) and (min-width: 768px) {
+	#headlogo {
+		float: left;
+		margin-right: 20px;
+	}
+	#topbar header {
+		float: left;
+	}
+	#headlogo {
+		width: 100px;
+		height: 100px;
+	}
+	#topnav {
+		float: right;
+		vertical-align: middle;
+		margin-top: 30px;
+	}
+	.nav {
+		font-size: 20px;
+	}
+	#name {
+		font-size: 26px;
+	}
+
+	#qt {
+		width: 100%;
+		text-align: center;
+		float: left;
+		padding-top: 40px;
+	}
+	#add,#hrs {
+		float: left;
+		width: 50%;
+	}
+	footer {
+		height: 340px;
+	}
+}
+
+@media (max-width: 767px) {
+	#topbar {
+		padding-bottom: 0;
+		position: relative;
+		height: 250px;
+	}
+	#headlogo {
+		display: none;
+	}
+	header {
+		text-align: center;
+		margin-top: 20px;
+	}
+	#topnav {
+		background-color: black;
+		margin: 0;
+		margin-top: 40px;
+		width: 100%;
+		position: relative;
+		bottom: 0;
+		text-align: center;
+	}
+	.nav {
+		font-size: 16px;
+	}
+
+	#qt {
+		display: none;
+	}
+	#add, #hrs {
+		width: 100%;
+		margin-top: 30px;
+	}
+	footer {
+		height: 400px;
+	}
+}
+
+
